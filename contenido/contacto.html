@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_form.css">
+    <link rel = "stylesheet" href = "https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-social.css">
+    <link rel="icon" href="../img/Asset_1_32x32.webp" sizes="192x192">
+    
+    <title>Hola Coffee | Contacto </title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo.gif" alt="Logo de Hola Coffee" class="logo"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item nav-typo"><a class="nav-link" href="../index.html" target="_blank">Inicio</a></li>
+                    <li class="nav-item nav-typo"><a class="nav-link" href="quienessomos.html" target="_blank">Quiénes somos</a></li>
+                    <li class="nav-item nav-typo"><a class="nav-link" href="cafes.html" target="_blank">Cafés</a></li>
+                    <li class="nav-item nav-typo active"><a class="nav-link" href="contactos.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container-fluid cus-carr">
+            <img class="img-fluid" src="../img/banner_contacto.jpg" alt="Granos de café">
+            <div class="col-12 cus-header-txt">
+                <h1 class="centrar">Te leemos con mucha atención</h1>
+                <p class="alignMiddle">Para nosotros, <strong>tu experiencia es lo más importante</strong>. Queremos que pruebes y repitas. Por eso, cuéntanos todo lo que quieras, danos tu opinión. Esteremos muy atentos para mejorar en todo lo que podamos.</p>
+            </div>        
+        </div>
+    </header>
+    <div class="container">
+    	<main>
+    		<h2>¿En qué podemos ayudarte?</h2>
+    		<p id="nota"><strong>Nota:</strong> los campos con asterisco (<span class="asterisco">*</span>) son obligatorios.</p>
+	    	<form action="/action_page.php">
+		    	<fieldset>
+					<legend>Datos personales</legend>
+                        <div class="input-group">
+                            <label for="name" class="form-label">Nombre: <span class="asterisco">*</span></label>
+                            <input type="text" class="form-control" id="name" placeholder="María" pattern="[a-zA-Z ](2,30)" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="surname" class="form-label">Apellido: <span class="asterisco">*</span></label>
+                            <input type="text" class="form-control" id="surname" placeholder="Pérez" pattern="[a-zA-Z ](2,30)" required>
+                        </div>
+						<div class="input-group">
+							<label for="fecha" class="form-label">Fecha de nacimiento: </label>
+							<input class="form-control" type="date" id="fecha" name="fecha">
+						</div>
+				</fieldset>
+				<fieldset>
+					<legend>Datos de contacto</legend>
+						<div class="input-group">
+							<label for="telefono" class="form-label">Número de teléfono:<span class="asterisco">*</span></label>
+							<input class="form-control" type="tel" id="telefono" name="telefono" placeholder="600 600 600" required>
+						</div>
+						<div class="input-group">
+							<label for="correoe" class="form-label">Correo electrónico: <span class="asterisco">*</span></label>
+							<input class="form-control" type="email" id="correoe" name="correoe" placeholder="mariaperez@holacoffee.com" required>
+						</div>
+				</fieldset>
+				<fieldset>
+					<legend>Cuéntanos</legend>
+						<div class="input-group">
+							<label for="comentario" class="form-label">Tu comentario o duda: </label>
+							<textarea class="form-control" id="comentario" name="comentario" placeholder="Ej.: Me gustaría saber si..."></textarea>
+						</div>
+				</fieldset>
+                <fieldset>
+                    <legend>Valora nuestro servicio</legend>
+                        <div class="input-group">
+                            <label class="form-label">¿Cómo te hemos tratado?</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Te sugerimos unas respuestas</option>
+                                <option value="1">¡Genial!</option>
+                                <option value="2">Bastante bien</option>
+                                <option value="3">Lo normal</option>
+                                <option value="4">Mejorable</option>
+                                <option value="5">¡Fatal!</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="comentario2" class="form-label">Tu opinión nos importa: </label>
+                            <textarea class="form-control" id="comentario2" name="comentario" placeholder="Ej.: Podríais mejorar en..."></textarea>
+                        </div>
+                </fieldset>
+                <fieldset>
+                    <legend>¿Qué te parecen nuestros productos?</legend>
+                        <div>
+                            <p style="margin-left: 2%">Marca los productos que hayas probado:</p>
+                            <input class="margenIzq2" type="checkbox" name="cafe" id="coffee" value="cafe"><label for="coffee">café</label><br>
+                            <input class="margenIzq2" type="checkbox" name="te" id="tea" value="te"><label for="tea">té</label><br>
+                            <input class="margenIzq2" type="checkbox" name="bizcochos" id="cake" value="bizcochos"><label for="cake">bizcochos</label><br>
+                            <input class="margenIzq2" type="checkbox" name="galletas" id="cookies" value="galletas"><label for="cookies">galletas</label><br>                            
+                        </div>
+                        <div class="input-group">
+                            <label for="customRange3" class="form-label labelRango">Indica si volverías a pedirlos (1-No creo / 10-Estoy deseando)</label>
+                            <span class="spanRango">    
+                                <input type="range" class="form-range" min="0" max="10" step="1" id="customRange3" value="5" oninput="vuelta.value=customRange3.value">
+                                    <output id="rangoActual" name="vuelta" for="customRange3">5</output> 
+                            </span>
+                        </div>
+                </fieldset>
+                <div>
+                    <button class="btn btn-outline-secondary" type="reset">
+                        <span class="enviar">Borrar campos</span>
+                    </button>
+                    <br><br>
+                    <button class="btn btn-outline-warning" type="submit">
+                        <span class="enviar">Enviar</span>
+                    </button>
+                </div>
+            </form>    
+                <br>
+            <form action="curriculums.php">
+                <fieldset>
+                    <legend>¿Quieres trabajar con nosotros?</legend>
+                    
+                        <div class="input-group">
+                            <label for="inputGroupFile04">Déjanos tu currículum y cuéntanos algo sobre ti:</label>
+                            <input type="file" class="form-control" id="inputGroupFile04" aria-label="Upload">
+                            
+                        </div>
+                        <div class="input-group">
+                            <label for="comentario3">Qué te gustaría que supiéramos sobre ti: </label>
+                            <textarea class="form-control" id="comentario3" name="comentario" placeholder="Ej.: Me encantaría trabajar con vosotros porque..."></textarea>
+                        </div>
+                </fieldset>
+				<button class="btn btn-outline-warning" type="submit">
+                    <span class="enviar">Enviar</span>
+                </button>
+
+			</form>
+		</main>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html"> Inicio</a></li>
+                        <li><a href="quienessomos.html" target="_blank"> Quiénes somos</a></li>
+                        <li><a href="cafes.html" target="_blank"> Cafés</a></li>
+                        <li><a href="#"> Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Estamos en:</h5>
+                    <address>
+                      <p class="cus-p-footer">Calle Doctor Fourquet 33, 28012 Madrid.</p>
+                      <p class="cus-p-footer">(Metros: Lavapiés / Estación del Arte / Embajadores)</p>
+                      <p class="cus-p-footer"><i class="fas fa-phone"></i> +91 700 00 00</p>
+                      <p class="cus-p-footer"><i class="fas fa-envelope"></i><a href="mailto:holacoffee@holacoffee.es"> holacoffee@holacoffee.es</a></p>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div>
+                        <a class="btn btn-social-icon" href="https://www.instagram.com/holacoffee/?hl=es" target="_blank"><span class="fab fa-instagram"></span></a>
+                        <a class="btn btn-social-icon" href="https://www.facebook.com/holacoffeeroasters/" target="_blank"><span class="fab fa-facebook"></span></a>
+                        <a class="btn btn-social-icon" href="https://twitter.com/holacoffeeroast?lang=es" target="_blank"><span class=" fab fa-twitter-square"></span></a>
+                        <a class="btn btn-social-icon" href="https://www.youtube.com/HolaCoffeeroasters" target="_blank"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+           </div>
+           <div class="col-auto">
+                <div>
+                    <p>&copy; 2020 <strong>Hola Coffee</strong></p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    
+
+    <noscript>Oopps! Algo va mal. Revisa la configuración de tu navegador y permite JavaScript para ver el contenido de esta página.</noscript>
+
+</body>
+</html>
